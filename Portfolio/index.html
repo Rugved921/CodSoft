@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        /* Additional CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hide all sections by default */
+        .section {
+            display: none;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            min-height: 100vh; /* Set minimum height to fill the viewport */
+        }
+
+        /* Display the active section */
+        .section.active {
+            display: flex;
+            flex-direction: column; /* Align items in a column */
+        }
+
+        /* Style for section content */
+        .section-content {
+            max-width: 800px; /* Limit width for better readability */
+            text-align: center; /* Center text content horizontally */
+        }
+
+        /* Style for education items */
+        .education-item {
+            text-align: left; /* Align text to the left */
+            margin: 10px 0; /* Add some margin between items */
+        }
+
+        .education-item h3,
+        .education-item p {
+            margin: 5px 0; /* Adjust margin for better spacing */
+            display: block; /* Display items in a block */
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 35vh;
+               }
+               .contact-container {
+  background-color: #f9f9f9; /* Background color of the box */
+  padding: 20px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.contact-info {
+  max-width: 600px; /* Maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.contact-info ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.contact-info li {
+  margin-bottom: 10px; /* Spacing between list items */
+}
+
+.contact-info a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Text color */
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Text color on hover */
+}
+
+
+
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero" id="home">
+        <nav>
+            <ul>
+                <li><a href="#education" onclick="showSection('#education')">Education</a></li>
+                <li><a href="#skills" onclick="showSection('#skills')">Skills</a></li>
+                <li><a href="#projects" onclick="showSection('#projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('#contact')">Contact Information</a></li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1Zh9uxRw5SFLm2u5QtX7g6GAfVnFPn48X/view?usp=drivesdk" class="btn">Resume</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">Computer Science and Technology </span>
+            <h2>Hello, I’m <span>Rugved Goparaju</span></h2>
+            <p>
+                As a Learner, my aim is to leverage my skills  to develope innovative projects. With a keen interest in coding, emerging technologies, I aspire to grow professionally, solve real-world problems, and make a positive impact in the ever-evolving tech landscape.
+            </p>
+            <li><span>LinkedIn:</span><a href="https://www.linkedin.com/in/rugved-goparaju-55840a226" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+<!-- Education Section -->
+<div class="section" id="education">
+    <div class="section-content">
+             <h2>Education Details &#127891;</h2>
+           <div class="education-item">
+            <h3>Board of Secondary Education - 97%</h3>
+            <p>JMJ High School</p>
+           </div>
+            <div class="education-item">
+            <h3>Board of Intermediate Education - 97%</h3>
+            <p>Sri Chaitanya Junior College</p>
+            </div>
+            <div class="education-item">
+            <h3>Bachelors of Technology - 7.99 CGPA</h3>
+            <p>Sreenidhi Institute of Science and Technology</p>
+            </div>
+        <p>This section provides an overview of educational background, highlighting academic grades.</p>
+    </div>
+</div>
+
+
+    <!-- Skills Section -->
+    <div class="section" id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="front-end">
+                <h3>Front-end Skills</h3>
+                <ul>
+                    <li>HTML(intermediate)</li>
+                    <li>CSS(intermediate)</li>
+                    <li>Bootstrap(beginner)</li>
+                </ul>
+            </div>
+            <div class="back-end">
+                <h3>Back-end Skills</h3>
+                <ul>
+                    <li>SQL (intermediate)</li>
+                    <li>PHP (beginner)</li>
+                    <li>JavaScript (beginner)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section" id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="Project-1">
+                <h3>Film Fusion </h3>
+                <p>
+                     A Cinematic Guide is a Movie Recommendation System is a project which recommends the movies related to the movie we
+search by comparing all the properties of the searched movie in the existing database and gives the best possible result.
+                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <title>Contact Information</title>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information&#x260E;</h2>
+                <ul>
+                    <li><span>Contact Number:</span> +91 8639937301</li>
+                    <li><span>Email:</span> <a href="mailto:rugvedgoparaju921@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                    <!-- LinkedIn Icon linked to your profile -->
+                    <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/rugved-goparaju-55840a226" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <!-- GitHub Icon linked to your profile -->
+                    <li><span>GitHub:</span> <a href="https://github.com/Rugved921" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+<footer>
+    <p>&copy; 2024 Rugved Goparaju. All Rights Reserved.</p>
+</footer>
+
+
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            // Show only the selected section
+            document.querySelector(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
